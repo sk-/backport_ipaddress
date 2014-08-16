@@ -11,7 +11,7 @@ script: >
           coverage run --append --branch --source=ipaddress test_ipaddress.py &&
           python setup.py sdist &&
           pip install --upgrade dist/backport_ipaddress-*.tar.gz &&
-          cd /tmp && python -m ipaddress
+          cd /tmp && python -m ipaddress && cd -
 after_success:
   - "coverage report -m"
   - "coveralls"
