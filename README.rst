@@ -40,6 +40,13 @@ with this port you need to do::
 
     ipaddress.ip_address(bytearray('\x00\x00\x00\x00'))
 
+Missing
+-------
+
+One thing that is missing and could be important for performance is the
+``lru_cache`` for many of the methods. ``functools`` in Python 2 does not have
+such decorator. Maybe in the future I will backport that method as well.
+
 License
 -------
 
