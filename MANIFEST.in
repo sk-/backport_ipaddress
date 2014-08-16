@@ -1,0 +1,6 @@
+include ipaddress.py
+include test_ipaddress.py
+include LICENSE
+include README.rst
+include setup.py
+include setup.cfg
