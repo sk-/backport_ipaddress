@@ -8,10 +8,10 @@ install:
   - "pip install coverage"
   - "pip install coveralls"
 script: >
-		  coverage run --append --branch --source=ipaddress test_ipaddress &&
-		  python setup.py sdist &&
-		  pip install --upgrade dist/backport_ipaddress-*.tar.gz &&
-		  cd /tmp && python -m ipaddress
+          coverage run --append --branch --source=ipaddress test_ipaddress &&
+          python setup.py sdist &&
+          pip install --upgrade dist/backport_ipaddress-*.tar.gz &&
+          cd /tmp && python -m ipaddress
 after_success:
   - "coverage report -m"
   - "coveralls"
