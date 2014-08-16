@@ -8,7 +8,7 @@ setup(
     long_description=open('README.rst').read(),
     maintainer='Sebastian Kreft',
     url='http://github.com/sk-/backport_ipaddress',
-    py_modules=['backport_ipaddress'],
+    py_modules=['ipaddress'],
     tests_require=['unittest2', 'nose'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
